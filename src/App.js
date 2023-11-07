@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState, createContext } from 'react';
+import Login from './Screens/Login';
+import FullLayout from './Screens/FullLayout';
+import Dashboard from './Screens/Dashboard';
+import Stock from './Screens/Stock';
+import SalesPerson from './Screens/SalesPerson';
+import { ContextProvider } from "./assets/context"
 
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ContextProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Login />} />
+          <Route path="dashboard" element={<FullLayout />} >
+            <Route index element={<Dashboard />} />
+            <Route path='stock' element={<Stock />} />
+            <Route path='salesPerson' element={<SalesPerson />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </ContextProvider>
   );
 }
 

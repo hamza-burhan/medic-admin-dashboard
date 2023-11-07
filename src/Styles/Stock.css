@@ -1,0 +1,107 @@
+.stock-container {
+    width: 85%;
+    height: fit-content;
+    /* background-color: #F0F2F5; */
+}
+
+.top-bar {
+    width: 100%;
+    /* background-color: red; */
+    height: 100px;
+    display: "flex";
+    align-items: "center";
+    justify-content: "center";
+}
+
+.cards-container {
+    width: 98%;
+    height: 200px;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.in-stock {
+    width: 24%;
+    height: 90%;
+    background-color: white;
+    margin-left: 10px;
+    border-radius: 10px;
+    box-shadow: 1.25rem 0 1.6875rem 1.25rem rgba(0, 0, 0, 0.05);
+}
+
+.box-icon {
+    width: 20%;
+    height: 35%;
+    background-color: red;
+    border-radius: 10px;
+    margin-left: 25px;
+    margin-top: -20px;
+    box-shadow: 1.25rem 0 1.6875rem 0 rgba(0, 0, 0, 0.05);
+    /* background-color: white; */
+    color: white
+}
+
+.products-table {
+    width: 96%;
+    height: 500px;
+    background-color: white;
+    box-shadow: 1.25rem 0 1.6875rem 1.25rem rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.table-header {
+    width: 90%;
+    height: 70px;
+    box-shadow: 1.25rem 0 1.6875rem 1.25rem rgba(0, 0, 0, 0.05);
+    background: linear-gradient(195deg, #49a3f1, #1A73E8);
+    border-radius: 10px;
+    margin-top: -30px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.add-new-bt {
+    width: 96%;
+    height: 150px;
+    background-color: white;
+    box-shadow: 1.25rem 0 1.6875rem 1.25rem rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.title-bt {
+    /* background-color: red; */
+    width: 100%;
+    height: 40%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    border-radius: 10px;
+    flex-direction: column;
+}
+
+.add-bt {
+    width: 200px;
+    height: 40px;
+    /* background-color: red; */
+    margin-top: 30px;
+}
+
+.bt {
+    width: 100%;
+    height: 100%;
+}

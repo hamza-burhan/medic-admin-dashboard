@@ -1,0 +1,22 @@
+.astrodivider {
+    /* margin: 64px auto; */
+    margin-top: 10px;
+    width: 400px;
+    max-width: 100%;
+    position: relative;
+}
+
+.astrodividermask {
+    overflow: hidden;
+    height: 20px;
+}
+
+.astrodividermask:after {
+    content: '';
+    display: block;
+    margin: -25px auto 0;
+    width: 100%;
+    height: 25px;
+    border-radius: 125px / 12px;
+    box-shadow: 0 0 8px #ffffff;
+}
