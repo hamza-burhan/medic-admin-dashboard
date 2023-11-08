@@ -1,5 +1,5 @@
 .stock-container {
-    width: 85%;
+    width: 80%;
     height: fit-content;
     /* background-color: #F0F2F5; */
 }
@@ -15,7 +15,7 @@
 
 .cards-container {
     width: 98%;
-    height: 200px;
+    height: 170px;
     /* background-color: red; */
     display: flex;
     align-items: center;
@@ -30,18 +30,26 @@
     margin-left: 10px;
     border-radius: 10px;
     box-shadow: 1.25rem 0 1.6875rem 1.25rem rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
 }
+
+
+
 
 .box-icon {
     width: 20%;
-    height: 35%;
-    background-color: red;
+    height: 80%;
+    /* background-color: red; */
     border-radius: 10px;
     margin-left: 25px;
     margin-top: -20px;
     box-shadow: 1.25rem 0 1.6875rem 0 rgba(0, 0, 0, 0.05);
     /* background-color: white; */
-    color: white
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .products-table {
@@ -97,11 +105,191 @@
 .add-bt {
     width: 200px;
     height: 40px;
-    /* background-color: red; */
     margin-top: 30px;
 }
 
 .bt {
     width: 100%;
     height: 99%;
+}
+
+.breadcrubms {
+    width: 100%;
+    height: 100%;
+}
+
+.card-info {
+    width: 150px;
+    height: 80px;
+    /* background-color: red; */
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    margin-right: 15px;
+    margin-top: 15px;
+}
+
+.card-info-container {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    /* background-color: red; */
+    justify-content: space-between;
+}
+
+.card-info-tilte {
+    font-size: 18px;
+    color: gray;
+}
+
+.card-info-number {
+    font-size: 20px;
+    color: black;
+    font-weight: 600;
+}
+
+.divider-parent {
+    /* margin: 64px auto; */
+    margin-top: 10px;
+    width: 400px;
+    max-width: 100%;
+    position: relative;
+}
+
+.divider-child {
+    overflow: hidden;
+    height: 20px;
+}
+
+.divider-child:after {
+    content: '';
+    display: block;
+    margin: -25px auto 0;
+    width: 100%;
+    height: 21px;
+    border-radius: 125px / 12px;
+    box-shadow: 0 0 8px #000000;
+}
+
+.card-percentage {
+    width: 100%;
+    height: 20%;
+    /* background-color: red; */
+}
+
+.card-percentage>span {
+    color: #7F809A;
+    font-size: 15px;
+    margin-left: 20px;
+}
+
+.card-percentage>span>i {
+    color: #50AA54;
+}
+
+.percent {
+    font-size: 15px;
+}
+
+.progress {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.progress-bar {
+    width: 30px;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-right: 20px;
+    display: flex;
+}
+
+.progress-bar-inner {
+    width: 100%;
+    background: #494A7D;
+    transition: height 1.3s ease;
+}
+
+.step-indicators {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.step-indicator {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #494A7D;
+    justify-content: center;
+    z-index: 9999;
+
+}
+
+/* / Active Status / .step.active {
+    / background-color: red !important;/
+} */
+
+.step-title {
+    position: absolute;
+    left: -80px;
+    top: 30%;
+    transform: translateY(-50%);
+    color: black;
+    width: 120px;
+    margin-left: -50px;
+    font-weight: 900;
+    font-size: 14px;
+
+}
+
+.step-description {
+    position: absolute;
+    left: -80px;
+    top: 100%;
+    transform: translateY(-50%);
+    color: black;
+    width: 160px;
+    margin-left: -50px;
+    font-weight: 500;
+    margin-top: -5px;
+}
+
+.stepper-start-container {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+.stepper-start {
+    width: 90%;
+    height: 90%;
+    border-top: 1px solid rgb(182, 180, 180);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.inputs-container {
+    width: 80%;
+    height: 100%;
+    border-left: 1px solid rgb(182, 180, 180);
+    display: flex;
+    justify-content: center;
+}
+
+.additional-info {
+    width: 90%;
+    height: 100%;
 }

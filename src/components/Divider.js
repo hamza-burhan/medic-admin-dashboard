@@ -1,8 +1,8 @@
 import "../Styles/Divider.css"
-export default function Divider() {
+export default function Divider(props) {
     return (
         <div className="astrodivider">
-            <div className="astrodividermask"></div>
+            <div className="astrodividermask" style={{ boxShadow: props.color }}></div>
         </div>
     )
 }
